@@ -8,7 +8,9 @@ public class DesignPattern {
 
         User userOb= new User("Sabbir");
         //userOb.name = "Sabbir";
-        System.out.println("Hello "+ userOb.name);
+        //System.out.println("Hello "+ userOb.name);
+
+        userOb.sayHello();
 
     }
     

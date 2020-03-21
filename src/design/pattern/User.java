@@ -9,4 +9,7 @@ public class User {
         this.name = name;
     }
 
+    public void sayHello() {
+        System.out.println("Hello "+ name);
+    }
 }
