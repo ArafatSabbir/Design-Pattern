@@ -5,7 +5,11 @@ public class DesignPattern {
 
 
     public static void main(String[] args) {
-        System.out.println("Hello");
+
+        User userOb= new User();
+        userOb.name = "Sabbir";
+        System.out.println("Hello "+ userOb.name);
+
     }
     
 }
