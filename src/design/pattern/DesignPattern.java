@@ -5,13 +5,13 @@ public class DesignPattern {
 
 
     public static void main(String[] args) {
+        TaxCalculator calculator= getCalculator();
+        calculator.texCalculator();
 
-        User userOb= new User("Sabbir");
-        //userOb.name = "Sabbir";
-        //System.out.println("Hello "+ userOb.name);
+    }
 
-        userOb.sayHello();
-
+    public static TaxCalculator getCalculator(){
+        return new TaxCalculator2019();
     }
     
 }
