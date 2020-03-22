@@ -1,7 +1,5 @@
 package design.pattern.memento;
 
-import jdk.nashorn.internal.ir.CallNode;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,5 +12,10 @@ public class History {
 
     public EditorState pop (){
         var lastIndex=states.size()-1;
+        var lastState=states.get(lastIndex);
+
+        states.remove(lastState);
+
+        return lastState;
     }
 }
