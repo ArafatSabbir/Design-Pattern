@@ -1,16 +1,17 @@
 package design.pattern;
 
 
+import design.pattern.memento.Editor;
+
 public class DesignPattern {
 
 
     public static void main(String[] args) {
-        drawUIControl(new TextBox());
+        Editor editor=new Editor();
+        editor.setContent("a");
+        editor.setContent("b");
+        editor.setContent("c");
 
-    }
-
-    public static void drawUIControl(UIControl uiControl){
-        uiControl.draw();
     }
 
 
