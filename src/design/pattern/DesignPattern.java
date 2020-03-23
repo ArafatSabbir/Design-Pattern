@@ -1,28 +1,21 @@
 package design.pattern;
 
 
-import design.pattern.memento.Editor;
-import design.pattern.memento.History;
+import design.pattern.state.Canvas;
+import design.pattern.state.SelectionTool;
 
 public class DesignPattern {
 
 
     public static void main(String[] args) {
-        var editor=new Editor();
-        var history= new History();
+        var canvas=new Canvas();
+        canvas.setCurrentTool(new SelectionTool());
+        canvas.mouseDown();
+        canvas.mouseUp();
+    }
 
-        editor.setContent("a");
-        history.push(editor.createState());
-
-        editor.setContent("b");
-        history.push(editor.createState());
-
-        editor.setContent("c");
-        editor.restore(history.pop());//will print b
-        editor.restore(history.pop());//will print a
-
-        System.out.println(editor.getContent());
-
+    public static void drawUIControl(UIControl control){
+        control.draw();
     }
 
 
