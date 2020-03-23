@@ -12,6 +12,8 @@ public class DesignPattern {
         canvas.setCurrentTool(new SelectionTool());
         canvas.mouseDown();
         canvas.mouseUp();
+        System.out.println("Memento and State Pattern Done.");
+        System.out.println("Have to enroll to Mosh Course.");
     }
 
     public static void drawUIControl(UIControl control){
